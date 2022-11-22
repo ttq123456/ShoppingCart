@@ -81,11 +81,11 @@ function addProducts(){
     var screen = getELE("Screen").value;
     var backCamera = getELE("BackCamera").value;
     var frontCamera = getELE("FrontCamera").value;
-    var img = getELE("img").value;
+    var img = getELE("Img").value;
     var desc = getELE("Desc").value;    
     var type = getELE("Type").value;
 
-    var sp = new SanPham(name,price,screen,backCamera,frontCamera,img,desc,type);
+    var sp = new ProDuct(name,price,screen,backCamera,frontCamera,img,desc,type);
     console.log(sp);
 
     //B2: lưu thông tin nhập về data
@@ -158,7 +158,7 @@ function capNhatSP(id){
     var desc = getELE("Desc").value;    
     var type = getELE("Type").value;
 
-    var sp = new SanPham(name,price,screen,backCamera,frontCamera,img,desc,type);
+    var sp = new ProDuct(name,price,screen,backCamera,frontCamera,img,desc,type);
     console.log(sp);
     //B2: Cập nhật thông tin mới xuống data
     proDuctSer.capNhatSanPham(id,sp)
