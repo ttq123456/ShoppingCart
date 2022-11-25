@@ -54,7 +54,7 @@ function ProDuctService() {
 
         var mangTK = [];
        mangTK = mangSP.filter(function(sp){
-            return sp.tenSP.toLowerCase().indexOf(chuoiTK.toLowerCase()) >= 0;
+            return sp.name.toLowerCase().indexOf(chuoiTK.toLowerCase()) >= 0;
         });
         return mangTK;
     }
