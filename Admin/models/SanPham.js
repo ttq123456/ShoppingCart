@@ -6,5 +6,5 @@ function ProDuct(name,price,screen,backCamera,frontCamera,img,desc,type){
     this.frontCamera = frontCamera;
     this.img = img;
     this.desc = desc;
-    this.type - type;
+    this.type = type;
 }
