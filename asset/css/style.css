@@ -28,15 +28,17 @@ header#shopping {
     font-size: 26px;
 }
 
+#shopping .navbar-toggler-icon{
+    color: white;
+} 
+
 /* carousel  */
-.carousel {
-    background-image: url(../img/bg-2.png);
+.carousel{
+    background-image: url(../img/bg-2.png); 
     width: 100%;
     height: 500px;
-    /* background-repeat: none; */
     background-position: center;
     background-size: cover;
-
 }
 
 /* products */
@@ -53,9 +55,30 @@ header#shopping {
     font-weight: 700;
 }
 
+
 @media screen and (min-width: 576px){
     #shopping .modal-dialog {
         max-width: 700px;
         margin: 1.75rem auto;
     }
+}
+
+/* Reponsive */
+/* carousel  */
+@media screen and (max-width: 992px) {
+    .carousel {
+        height: 350px;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        height: 250px;
+    }   
+}
+
+@media screen and (max-width: 576px) {
+    .carousel {
+        height: 150px;
+    }   
 }

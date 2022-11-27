@@ -20,7 +20,7 @@ function hienThiGiaoDien(mangSP){
     var content = "";
     mangSP.map(function(sp){
         content += `
-        <div class="card col-3">
+        <div class="card col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
         <img src="${sp.img}" class="card-img-top py-2" alt="">
         <div class="card-body">
           <h5 class="card-title">${sp.name}</h5>
